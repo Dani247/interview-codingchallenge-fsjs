@@ -1,0 +1,29 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "interview coding challenge full stack javascript",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "body-parser": "*",
+    "cors": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dani247/interview-codingchallenge-fsjs.git"
+  },
+  "author": "Daniel Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dani247/interview-codingchallenge-fsjs/issues"
+  },
+  "homepage": "https://github.com/Dani247/interview-codingchallenge-fsjs#readme"
+}
