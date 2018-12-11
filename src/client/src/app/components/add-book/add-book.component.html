@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row bg-warning">
+      
+      <div class="col">
+          <br>
+        <h3>New Book</h3>
+      </div>
+    </div>
+  
+    <div class="row bg-secondary">
+      <div class="col">
+        <br>
+        <label>Book title</label>
+        <input type="text" class="form-control" id="title" placeholder="book title" #title>
+        <br>
+        <label>Author</label>
+        <input type="text" class="form-control" id="author" placeholder="book author" #author>
+        <br>
+        <label>Genre</label>
+        <input type="text" class="form-control" id="genre" placeholder="Book genre" #genre>
+        <br>
+        <button (click)="addBook(title.value,author.value,genre.value)" class="btn btn-success">Add book</button>
+        <hr>
+      </div>
+    </div>
+  </div>
+  

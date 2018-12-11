@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row bg-warning">
+      
+      <div class="col">
+          <br>
+        <h3>Your book collection - <button class="btn btn-success" [routerLink]="['/addBook']"><i class="fas fa-plus-square"></i></button></h3>
+      </div>
+    </div>
+  
+    <div class="row bg-secondary">
+      <div class="col">
+        <br>
+        <h3 *ngIf="loading">Loading...</h3>
+        <ol *ngFor="let book of books">
+            <li><button [routerLink]="['/editBook', book._id]" class="btn btn-info"><i class="fas fa-pen"></i></button> | <button (click)="deleteBook(book._id)" class="btn btn-danger"><i class="fas fa-trash"></i></button> Title: <i>{{book.name}}</i> - Author: <u>{{book.author}}</u> ({{book.genre}})</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  
